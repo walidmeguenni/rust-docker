@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rust-app:
+    container_name: rust-app-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/usr/src/app
