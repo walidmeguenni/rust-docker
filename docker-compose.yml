@@ -3,6 +3,7 @@ version: '3.8'
 services:
   rust-app:
     container_name: rust-app-container
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
