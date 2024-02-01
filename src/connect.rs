@@ -1,5 +1,5 @@
 pub mod sql_connect_options {
-    pub fn connect() {
-        println!("sql_connect_options::connect() called");
+    pub fn client() {
+        println!("client called!");
     }
 }
